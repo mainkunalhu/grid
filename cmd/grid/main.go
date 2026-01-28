@@ -4,15 +4,23 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/charmbracelet/bubbles/progress"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/mainkunalhu/grid/internal/ui"
 )
 
 func main() {
-	p := tea.NewProgram(ui.InitialModel())
+	ramBar := progress.New(progress.WithDefaultGradient())
+	cpuBar := progress.New(progress.WithScaledGradient("#FF7CCB", "#FDFF8C"))
 
-	if _, err := p.Run(); err != nil {
+	m := ui.Model{
+		RamBar: ramBar,
+		CpuBar: cpuBar,
+	}
+
+	if _, err := tea.NewProgram(m).Run(); err != nil {
 		fmt.Printf("Error : %v", err)
 		os.Exit(1)
 	}
 }
+

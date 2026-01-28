@@ -1,29 +1,25 @@
 package ui
 
 import (
+	"github.com/charmbracelet/bubbles/progress"
 	tea "github.com/charmbracelet/bubbletea"
 )
 
 type Model struct {
-	ram          int
-	totalRam     int
-	storage      int
-	totalStorage int
-	cpu          int
-	totalCpu     int
+	ramPercent float64
+	totalRam   int
+	cpuPercent float64
+	totalCpu   int
+
+	// UI Components
+	RamBar progress.Model
+	CpuBar progress.Model
 }
 
-func InitialModel() Model {
-	return Model{
-		ram:          0,
-		totalRam:     0,
-		storage:      0,
-		totalStorage: 0,
-		cpu:          0,
-		totalCpu:     0,
-	}
+func toGB(bytes int) float64 {
+	return float64(bytes) / (1024 * 1024 * 1024)
 }
 
 func (m Model) Init() tea.Cmd {
-	return nil
+	return getSystemStats()
 }
