@@ -4,7 +4,7 @@ This is simple tool for terminal to show system stats. It show RAM, CPU and Disk
 
 ## Demo
 
-**[Watch Demo Video](https://github.com/mainkunalhu/grid/blob/main/assets/video.mp4)**
+https://github.com/mainkunalhu/grid/blob/babd2aa266efe9b5261cebbe27aa8d81fcf29042/assets/video.mp4
 
 ## Download
 
