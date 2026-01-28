@@ -1,6 +1,10 @@
-package model
+package ui
 
-type StatsModel struct {
+import (
+	tea "github.com/charmbracelet/bubbletea"
+)
+
+type Model struct {
 	ram          int
 	totalRam     int
 	storage      int
@@ -9,8 +13,8 @@ type StatsModel struct {
 	totalCpu     int
 }
 
-func InitialModel() StatsModel {
-	return StatsModel{
+func InitialModel() Model {
+	return Model{
 		ram:          0,
 		totalRam:     0,
 		storage:      0,
@@ -18,4 +22,8 @@ func InitialModel() StatsModel {
 		cpu:          0,
 		totalCpu:     0,
 	}
+}
+
+func (m Model) Init() tea.Cmd {
+	return nil
 }
