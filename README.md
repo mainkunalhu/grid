@@ -4,11 +4,15 @@ This is simple tool for terminal to show system stats. It show RAM, CPU and Disk
 
 ## Demo
 
-I put video here so you can see how it work.
-
-[Watch Demo Video](assets/video.mp4)
-
-_(Note: If video not play, you can find it in `assets/video.mp4` folder)_
+<video src="assets/video.mp4" 
+       width="600" 
+       controls 
+       loop 
+       muted 
+       autoplay
+       >
+Your browser does not support the video tag.
+</video>
 
 ## Download
 
