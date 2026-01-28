@@ -12,10 +12,12 @@ import (
 func main() {
 	ramBar := progress.New(progress.WithDefaultGradient())
 	cpuBar := progress.New(progress.WithScaledGradient("#FF7CCB", "#FDFF8C"))
+	storBar := progress.New(progress.WithScaledGradient("#448AFF", "#00E5FF"))
 
 	m := ui.Model{
-		RamBar: ramBar,
-		CpuBar: cpuBar,
+		RamBar:     ramBar,
+		CpuBar:     cpuBar,
+		StorageBar: storBar,
 	}
 
 	if _, err := tea.NewProgram(m).Run(); err != nil {

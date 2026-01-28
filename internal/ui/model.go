@@ -6,14 +6,21 @@ import (
 )
 
 type Model struct {
+	// --- Cpu/Ram ---
 	ramPercent float64
 	totalRam   int
 	cpuPercent float64
 	totalCpu   int
 
-	// UI Components
-	RamBar progress.Model
-	CpuBar progress.Model
+	// --- Storage Fields ---
+	storagePercent float64
+	totalStorage   int
+	usedStorage    int
+
+	// --- UI Components ---
+	RamBar     progress.Model
+	CpuBar     progress.Model
+	StorageBar progress.Model
 }
 
 func toGB(bytes int) float64 {
