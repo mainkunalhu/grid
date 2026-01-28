@@ -33,7 +33,3 @@ Then run one of these command:
 - **Build for Linux:** `make build-linux`
 - **Build for Windows:** `make build-window`
 - **Build for Mac:** `make build-mac`
-
-```
-
-```
