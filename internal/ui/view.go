@@ -30,3 +30,4 @@ func (m Model) View() string {
 		storUsed, storTotal, m.StorageBar.View(),
 	)
 }
+
