@@ -21,7 +21,7 @@ If you want build it from git clone, you can use these commands. You need Go ins
 First clone it:
 
 ```bash
-git clone [https://github.com/mainkunalhu/grid.git](https://github.com/mainkunalhu/grid.git)
+git clone https://github.com/mainkunalhu/grid.git
 cd grid
 
 ```
