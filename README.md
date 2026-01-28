@@ -10,9 +10,9 @@ https://github.com/user-attachments/assets/0f444435-7fd6-4fe4-9837-29510394051c
 
 If you just want use it and not build code, you can download binary file from Releases page.
 
-- **[Download for Linux](https://github.com/yourusername/grid/releases)**
-- **[Download for Windows](https://github.com/yourusername/grid/releases)**
-- **[Download for MacOS](https://github.com/yourusername/grid/releases)**
+- **[Download for Linux](https://github.com/mainkunalhu/grid/releases)**
+- **[Download for Windows](https://github.com/mainkunalhu/grid/releases)**
+- **[Download for MacOS](https://github.com/mainkunalhu/grid/releases)**
 
 ## How to Build
 
@@ -21,7 +21,7 @@ If you want build it from git clone, you can use these commands. You need Go ins
 First clone it:
 
 ```bash
-git clone [https://github.com/yourusername/grid.git](https://github.com/yourusername/grid.git)
+git clone [https://github.com/mainkunalhu/grid.git](https://github.com/mainkunalhu/grid.git)
 cd grid
 
 ```

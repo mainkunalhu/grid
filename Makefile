@@ -11,4 +11,4 @@ build-window:
 	GOOS=windows GOARCH=amd64 go build -o grid.exe ./cmd/grid/main.go
 
 build-mac:
-	GOOS=darwin GOARCH=arm64 go build -o grid ./cmd/grid/main.go
+	GOOS=darwin GOARCH=arm64 go build -o grid-mac ./cmd/grid/main.go
